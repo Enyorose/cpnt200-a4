@@ -13,10 +13,15 @@
       <section>
         <h2>Tell Us What You Think</h2>
         <form @submit.prevent="addComment">
-        <InputComment :value="message.msg" :inputInfo="message"  />
+        <InputComment :value="message.msg" :inputInfo="message" v-model="message.msg" />
            <button>Add Comment</button>
         </form>
-        <p>{{message.msg}}</p>
+        <ul><li v-for="message in commentItems"
+            :key="message.id"
+            class="border-solid border-2 my-4">
+            <p>{{message.msg}}</p>
+            </li>
+        </ul>
       </section>
     </main>
     <footer>
@@ -64,7 +69,7 @@ export default {
   },
   methods: {
     addComment: function() {
-      console.log(this.commentItems)
+      console.log(this.message.msg)
       return this.commentItems.push({
         msg: this.message.msg
       })
