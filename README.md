@@ -1,5 +1,13 @@
 # cpnt200-a4
-
+- Jessica Watson
+## Where to find my page
+- [GH Repo](https://github.com/Enyorose/cpnt200-a4)
+- [Netlify Site](https://hardcore-mestorf-27fe77.netlify.app/)
+## Something I learned
+- If it doesn't work slap v-model on it put in some existing data and see if it works. I'm still not sure if that is how to use it, but when I put it on my text field it worked, I think it catches the @emit but its so hard to find documentation on it.
+## Attributions
+- [Fesal](https://github.com/FesalBadday) He helped me so much trying to get the comment section to work I was so happy!
+- Little monster Icon [Icons 8](https://icons8.com/license)
 ## Build Setup
 
 ```bash
