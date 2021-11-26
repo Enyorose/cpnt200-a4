@@ -14,7 +14,7 @@
         <h2>Tell Us What You Think</h2>
         <form @submit.prevent="addComment">
         <InputComment :value="message.msg" :inputInfo="message" v-model="message.msg" />
-           <button>Add Comment</button>
+           <button class=" bg-gray-400">Add Comment</button>
         </form>
         <ul><li v-for="message in commentItems"
             :key="message.id"

@@ -1,6 +1,6 @@
 <template>
   <label :for="inputInfo.inputName">{{inputInfo.label}}
-    <input type="text" :name="inputInfo.inputName" :value="value" @input="$emit('input', $event.target.value)">
+    <input class=" border-0" type="text" :name="inputInfo.inputName" :value="value" @input="$emit('input', $event.target.value)">
   </label>
 </template>
 <script>
